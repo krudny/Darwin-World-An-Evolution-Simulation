@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class AnimalComparatorTest {
     @Test
@@ -23,5 +22,7 @@ public class AnimalComparatorTest {
             }
         }
         assertEquals(animals.get(1), max_animal);
+        assertNotEquals(animals.get(0), max_animal);
     }
+
 }

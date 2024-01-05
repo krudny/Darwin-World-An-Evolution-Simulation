@@ -151,7 +151,6 @@ public class Simulation {
             Animal newborn = new Animal(position, 2 * config.getReproduceEnergyLoss(), genotype);
             stronger.addChildCount();
             weaker.addChildCount();
-//            System.out.println("new genotype: "+ genotype.getGenes());
 
             stronger.setEnergy(stronger.getEnergy() - config.getReproduceEnergyLoss());
             weaker.setEnergy(weaker.getEnergy() - config.getReproduceEnergyLoss());
@@ -216,7 +215,6 @@ public class Simulation {
 
     public void increaseDay() {
         day = day + 1;
-//        System.out.println("Dzień: " + day);
     }
 
     public void runAsync() {
